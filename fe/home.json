@@ -1,0 +1,16 @@
+{
+  "post": [
+    {
+      "id": 1,
+      "username": "andre"
+    },
+    {
+      "id": 2,
+      "username": "dreas"
+    },
+    {
+      "id": 3,
+      "username": "kevin"
+    }
+  ]
+}

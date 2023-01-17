@@ -1,0 +1,173 @@
+###
+POST  http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "username": "kevin", 
+    "password": "kevin"
+}
+
+###
+POST  http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "username": "kevin", 
+    "password": "1234"
+}
+
+###
+DELETE  http://localhost:5000/kevin/logout
+Content-Type: application/json
+
+{
+    "username": "kevin", 
+    "password": "kevin"
+}
+
+###
+GET http://localhost:5000/user12
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZFVzZXIiOjE0LCJ1c2VybmFtZSI6ImtldmluIiwiaWF0IjoxNjY4OTY5MzQwLCJleHAiOjE2NjkwNTU3NDB9.XUbgnLB3VPgXmkb53go-dueFxJg-LfYM9XLq-jA2vmM
+
+###
+PUT http://localhost:5000/doe/edit
+Content-Type: application/json
+
+{
+    "username": "doe2",
+    "password": "doe",
+    "photoProfile": "https://i.ibb.co/tChKHtt/default-pp.jpg",
+    "birthday": "2001-09-09",
+    "country": "konoha",
+    "bio": "sasukee"
+}
+
+###
+PUT http://localhost:5000/doe2/edit-pp
+Content-Type: application/json
+
+{
+    "photoProfile": "https://i.ibb.co/L5RpYpM/steve-johnson-gbh-Opn9-NLAc-unsplash.jpg"
+}
+
+###
+PUT http://localhost:5000/andreas/edit-username
+Content-Type: application/json
+
+{
+    "username": "andre"
+}
+
+###
+PUT http://localhost:5000/doe3/edit-birthday
+Content-Type: application/json
+
+{
+    "birthday": "2001-08-07"
+}
+
+###
+PUT http://localhost:5000/doe3/edit-country
+Content-Type: application/json
+
+{
+    "country": "Amegakure"
+}
+
+###
+PUT http://localhost:5000/doe3/edit-bio
+Content-Type: application/json
+
+{
+    "bio": "asade sma lu semua"
+}
+
+###
+PUT http://localhost:5000/kevin/edit-pass
+Content-Type: application/json
+
+{
+    "pass": "123"
+}
+
+###
+GET http://localhost:5000/kevin/home
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZFVzZXIiOjE0LCJ1c2VybmFtZSI6ImtldmluIiwiaWF0IjoxNjY4OTY3NDU4LCJleHAiOjE2NjkwNTM4NTh9.6qL_y5cM2XRdFqMzXH4Z80L4EwiXDTSvOFzt-YdO9Ts
+
+###
+GET http://localhost:5000/andre/friends
+
+###
+POST http://localhost:5000/mekel/friends/add/4
+
+###
+DELETE http://localhost:5000/jane/friends/del/3
+
+###
+POST http://localhost:5000/kevin/new-post
+Content-Type: application/json
+
+{
+    "description": "halo nama saya kevin"
+}
+
+###
+POST http://localhost:5000/kevin/new-image
+Content-Type: application/json
+
+{
+    "url": "https://i.ibb.co/CQ3mDYZ/Andreas-Kevin-Maheswara-KTM.jpg"
+}
+
+###
+POST http://localhost:5000/andre/like/2
+
+###
+DELETE http://localhost:5000/andre/unlike/2
+
+###
+GET http://localhost:5000/andre/likedPost/3
+
+###
+GET http://localhost:5000/comment/8
+
+###
+POST http://localhost:5000/kevin/comment/4
+Content-Type: application/json
+
+{
+    "comment": "testes"
+}
+
+###
+DELETE  http://localhost:5000/kevin/deletePostId/2
+
+###
+GET http://localhost:5000/mekel/allUser
+
+###
+POST http://localhost:5000/content/share
+Content-Type: application/json
+
+{
+    "username": "kevin",
+    "idPost": 9,
+    "idFriend": 14
+}
+
+###
+GET http://localhost:5000/kevin/content/shared
+# Content-Type: application/json
+
+# {
+#     "username": "kevin"
+# }
+
+###
+PUT http://localhost:5000/kevin2/forgot
+
+Content-Type: application/json
+
+{
+    "pass": "andretok"
+}
